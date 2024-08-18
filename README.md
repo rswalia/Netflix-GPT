@@ -23,15 +23,6 @@
   - copyright
   - links
 
-## Features
-
-### Before Login
-
-- Signup / Login Page (form - validation)
-- Redirect to browse page (After Authentication)
-
-### After Login
-
 ## Steps
 
 - create-react-app
