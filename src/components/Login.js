@@ -95,7 +95,7 @@ const Login = () => {
       />
 
       <form
-        className="bg-black opacity-70 absolute w-4/12 mx-96 my-32 p-14 rounded-lg"
+        className="bg-black bg-opacity-70 absolute w-4/12 mx-96 my-32 p-14 rounded-lg"
         onSubmit={(e) => e.preventDefault()}
       >
         <h1 className="text-3xl text-white font-bold mb-7">
@@ -124,7 +124,7 @@ const Login = () => {
         />
         <button
           onClick={handleSigninSignup}
-          className="bg-red-700 text-white text-center w-full p-3 mb-4 rounded-lg"
+          className="bg-red-700 text-white text-center w-full p-3 mb-4 rounded-lg hover:bg-opacity-90"
         >
           {isSignin ? "Sign In" : "Sign Up"}
         </button>
@@ -138,7 +138,7 @@ const Login = () => {
         {isSignin && (
           <button
             // className="mx-4 my-2 w-96 p-4 border flex justify-center gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150"
-            className="mb-2 p-3 w-full flex justify-center gap-2 bg-white text-black rounded-lg"
+            className="mb-2 p-3 w-full flex justify-center gap-2 bg-white text-black rounded-lg hover:bg-opacity-90"
             onClick={handleGoogleSignIn}
           >
             <img

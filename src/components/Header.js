@@ -40,11 +40,11 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between absolute z-20 w-full">
+    <div className="flex justify-between absolute z-20 w-full bg-gradient-to-b from-black">
       <img
         src="netflix_logo.png"
         alt="netflix-logo"
-        className={user ? "w-32" : "w-48 mx-32"}
+        className={user ? "w-32 mx-8" : "w-48 mx-32"}
       />
 
       <div className="flex">
