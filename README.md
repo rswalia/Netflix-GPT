@@ -60,6 +60,7 @@
 - Main Movie (Trailer & info)
 - Secondary Container
 - Movie List & Movie Card UI
+- Fetch Popular movies from TMDB API
 
 > username : rohit@gmail.com
 > password : Rohit123

@@ -44,17 +44,17 @@ const Header = () => {
       <img
         src="netflix_logo.png"
         alt="netflix-logo"
-        className={user ? "w-32 mx-8" : "w-48 mx-32"}
+        className={user ? "w-36 mx-8" : "w-48 mx-32"}
       />
 
       <div className="flex">
-        {user?.email && <p className="text-white mt-3">{user.email}</p>}
+        {user?.email && <p className="text-white m-3">{user.email}</p>}
 
         {user?.photoURL && (
           <img
             src={user.photoURL}
             alt="photo-url"
-            className="rounded-full w-16 mt-2"
+            className="rounded-full w-14 m-2"
           />
         )}
 
