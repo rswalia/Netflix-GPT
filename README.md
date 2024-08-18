@@ -54,9 +54,12 @@
     - videoTrailer
 - Browse Page
 - Generate API Key & API Access Token
+- Main Container
 - Fetch movies from TMDB API
 - useNowPlayingMovies (custom hook)
 - Main Movie (Trailer & info)
+- Secondary Container
+- Movie List & Movie Card UI
 
 > username : rohit@gmail.com
 > password : Rohit123
