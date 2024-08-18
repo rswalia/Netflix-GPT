@@ -12,12 +12,12 @@
 
 - Body
 
-  - Trailer in background
-    - KGF (name)
-    - Play & info button
-  - (Movie List) \* N
-    - Top 10 in India (title)
-    - Cards \* N (flex)
+  - MainContainer
+    - VideoBackground (trailer)
+    - VideoInfo (name, desc, Play & info button)
+  - SecondaryContainer
+    - MovieList \* N
+      - MovieCard \* N
 
 - Footer
   - copyright
@@ -27,19 +27,20 @@
 
 ### Before Login
 
-- Signup / Login Page (form)
+- Signup / Login Page (form - validation)
 - Redirect to browse page (After Authentication)
 
 ### After Login
 
 ## Steps
 
-- npx create-react-app netflix-gpt
+- create-react-app
 - setup Tailwind CSS
-- Routing of App ( / : <Login/>, /browse : <Browse/> )
+- Routing of App : index.js - ( / : <Login/>, /browse : <Browse/> )
+- App.js (<Provider store={appStore}>)
 - Header
-- Login Form
-- Sign up Form
+- Login Page
+- Sign in form
 - Toggle Signin-Signup
 - Formik Library
 - onSubmit={(e) => e.preventDefault()}
@@ -49,12 +50,22 @@
 - Deploy using Firebase
 - Authentication (signup/signin)
 - Google sign in
-- After signin navigate to /browse
-- Implement Signout
-- user context
-- Protected Routes
-- Fetch movies from TMDB API
+- Sign Out (Header)
+- onAuthStateChanged (Header)
+  - After signin navigate to /browse
+  - Add user in Redux Store
+  - Protected Routes
+  - unsubscribe (unmounting)
+- Redux Store
+  - user
+  - movies
+    - nowPlayingMovies
+    - videoTrailer
+- Browse Page
 - Generate API Key & API Access Token
+- Fetch movies from TMDB API
+- useNowPlayingMovies (custom hook)
+- Main Movie (Trailer & info)
 
 > username : rohit@gmail.com
 > password : Rohit123
